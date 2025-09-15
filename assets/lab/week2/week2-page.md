@@ -19,12 +19,10 @@ nav_exclude: true
 
 ## 1. Basic Shell Commands on Ubuntu
 
-> Please Follow the TA's demonstration in class
+> Please follow the TA's demonstration in class
 
 - `APT`: software package manager
 - `Bash`: a widely used shell interface
-
-<br>
 
 <p style="color: green;">
 A video recording will be uploaded soon
@@ -36,7 +34,7 @@ A video recording will be uploaded soon
 > It is recommended to follow the official instruction to install ros2 from APT source: [check here](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html)
 
 - You are supposed to install **ros2 humble**, since ubuntu 22.04 is bound to this version.
-- If you are already familiar with the installation, you may find an APT ros2 mirror source more comfortble, eg. [tsinghua ros2 mirror](https://mirror.tuna.tsinghua.edu.cn/help/ros2/)
+- If you are already familiar with the installation, you may find an APT ros2 mirror source more comfortble, e.g., [tsinghua ros2 mirror](https://mirror.tuna.tsinghua.edu.cn/help/ros2/)
 
 <br>
 
