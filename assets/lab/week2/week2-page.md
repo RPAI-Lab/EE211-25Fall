@@ -24,9 +24,9 @@ nav_exclude: true
 - `APT`: software package manager
 - `Bash`: a widely used shell interface
 
-<p style="color: green;">
-A video recording will be uploaded soon
-</p>
+📹 [video recording](https://meeting.tencent.com/crm/2yXem0joec)
+
+📑 [a document you may refer](https://jjyczursn9.feishu.cn/docx/W3kadHQPXo5LoYxGsm4crVaWnDh)
 
 
 ## 2. Install ROS2 Humble
