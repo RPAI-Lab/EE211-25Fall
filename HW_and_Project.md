@@ -16,11 +16,11 @@ description: Course Homework and Project.
 
 # Homework
 
-<!-- ## Assignment 1 -->
-<!-- > **Deadline:** Oct. 13 -->
-<!--  -->
-<!-- - [Check Assignment 1](https://rpai-lab.github.io/EE211-25Fall/assets/hw/Assignment_1.pdf) -->
-<!--  -->
+<br>
+
+**Assignment 1**
+- <span style="color: red; font-weight: normal;">Due Sep. 30 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>   📄 [Download](https://rpai-lab.github.io/EE211-25Fall/assets/hw/Assignment_1.pdf)
+
 <!-- <br> -->
 <!--  -->
 <!-- ## Assignment 2 -->
