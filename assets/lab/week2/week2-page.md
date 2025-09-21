@@ -11,7 +11,7 @@ nav_exclude: true
 
 # Shell Commands & ROS2 Installation
 
-> **Last Update:** 2025-9-13
+> Last Update: 2025-9-13
 
 <br>
 

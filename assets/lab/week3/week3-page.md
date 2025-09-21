@@ -11,7 +11,7 @@ nav_exclude: true
 
 # ROS2 Basic Setup
 
-> **Last Update:** 2025-9-17
+> Last Update: 2025-9-17
 
 <br>
 
