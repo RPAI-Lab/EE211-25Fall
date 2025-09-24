@@ -11,7 +11,7 @@ nav_exclude: true
 
 # ROS2 Basic Setup
 
-> Last Update: 2025-9-17
+> Last Update: 2025-9-24
 
 <br>
 
@@ -29,9 +29,17 @@ nav_exclude: true
 - Play `turtlesim` <span style="float: right;">📑 [See](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html#)</span>
 - Understanding `nodes` <span style="float: right;">📑 [See](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html#)</span>
 
-<p style="color: green;">
-Video recording will be uploaded soon
-</p>
+<!-- <p style="color: green;"> -->
+<!-- Video recording will be uploaded soon -->
+<!-- </p> -->
+
+<br>
+<br>
+
+
+📹 [video recording - part 1](https://meeting.tencent.com/crm/KwBvrjBn6e)
+
+📹 [video recording - part 2](https://meeting.tencent.com/crm/2aZL3qJ9af)
 
 <br>
 
