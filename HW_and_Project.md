@@ -47,19 +47,38 @@ description: Course Homework and Project.
 
 # Final Project
 
-<!-- ## Project Description & Grading -->
-<!-- - [Check Here](https://rpai-lab.github.io/EE211-25Fall/assets/project/project_description) -->
-<!-- - [Check Here](http://127.0.0.1:4000/EE211-25Fall/assets/project/project_description) -->
-
-<!-- <img src="https://rpai-lab.github.io/EE211-25Fall/assets/images/proj_description_pic1.png" alt="proj_pic1" style="zoom:50%;" /> -->
 
 
-<!-- 1. 从起点移动到stop标志处，看到此标识需停止前行，移开标识后再继续移动（15分） -->
-<!-- 2. 导航至停在Pick区，抓取目标方块（35分） -->
-<!-- 1. 导航至红绿灯处，检测到红灯停止前进，待绿灯亮后继续前行（15分） -->
-<!-- 4. 导航至Place区，将物块放置在此处（15分） -->
-<!-- 5. 导航到Park区，停留5秒（10分） -->
-<!-- 7. 离开Park区，导航回到起点（10分） -->
+**Project Description & Grading**
+
+The project requires autonomous completion of navigation obstacle avoidance, pick & place, and visual detection tasks
+Each group has three attempts in the final, which is to be conducted in the final week of the course.
+
+<img src="https://rpai-lab.github.io/EE211-25Fall/assets/images/proj_description_pic1.png" alt="map illustration" style="zoom:25%;" />
+
+
+### Pick & Place <span style="float: right;">45 points</span>
+> Pick the targer object, then place it onto the target area
+
+- Pick target object from a fixed position, then place.  		<span style="float: right; color: #7253ed;">35 points</span>
+- Pick target object from a random position in an area, then place.  		<span style="float: right; color: #7253ed;">+ 5 points</span>
+- Pick target object without `aruco` for object localization  				<span style="float: right; color: #7253ed;">+5 points</span>
+<br>
+
+### Navigation <span style="float: right;">40 points</span>
+> Navigate autonomously across the given map
+
+- Navigate on a map with fixed obstacles 				<span style="float: right; color: #7253ed;">30 points</span>
+- Navigate on a map with random placed obstacles  				<span style="float: right; color: #7253ed;">+ 5 points</span>
+- Implement your own planner for navigation  					<span style="float: right; color: #7253ed;">+ 5 points</span>
+
+
+### Detection <span style="float: right;">15 points</span>
+> Stop when the red light is detected, continue when the green light is detected, stop when the stop sign is detected
+
+- Able to detect traffic lights and stop signs via camera    				<span style="float: right; color: #7253ed;">10 points</span>
+- Able to detect traffic lights and stop signs during navigation  				<span style="float: right; color: #7253ed;">+ 5 points</span>
+
 
 <!-- 1. Move from the starting point to the "stop" marker. Stop in place when the camera captures this sign, move on after the sign was removed (15 points). -->
 <!--  -->
