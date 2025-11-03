@@ -6,69 +6,38 @@ nav_exclude: true
 ---
 
 [← Back](https://rpai-lab.github.io/EE211-25Fall/course-materials/)
-<!-- [← Back](http://127.0.0.1:4000/EE211-25Fall/course-materials/) -->
 
 <br>
 
-# Lab Session Week-09 -- "Getting Familiar with our Robot"
+# Play with Our Robot Hardware
 
-> **Last Update:** 2025-11-04
+> Last Update: 2025-11-03
 
 <br>
 
 <!-- Table of contents -->
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-{:.no_toc}
----
-
-<br>
+<!-- {: .no_toc .text-delta } -->
+<!--  -->
+<!-- 1. TOC -->
+<!-- {:toc} -->
+<!-- {:.no_toc} -->
 
 
 
 
 ## Prerequisites
 
-### Make Sure to Check the Doc written by TA
 
-- [Manual for the robot we use](https://rpai-lab.github.io/EE211-25Fall/assets/project/robot_doc_for_25Fall_project)
+- Read this Doc <span style="float: right;">📑  [Robot Hardware Guide](https://rpai-lab.github.io/EE211-25Fall/assets/project/robot_doc)</span>
 
-### Make sure your ROS_DOMAIN_ID is unique on your PC, as well as your robot per group
-
-e.g.
-```
-
-|               |    Robot NUC   | member 1 PC | member 2 PC | member 3 PC | member4 PC |
-| ------------- | -------------- | ----------- | ----------- | ----------- | ---------- |
-|    Group 1    |       22       |      11     |      12     |     13      |     14     |
-|    Group 2    |       23       |      91     |      92     |     93      |     94     |    
-|    Group 3    |       24       |      31     |      32     |     33      |     34     |    
-|    Group 4    |       25       |      41     |      42     |     43      |     44     |    
-|    Group 5    |       26       |      51     |      52     |     53      |     54     |    
-|    Group 6    |       27       |      61     |      62     |     63      |     64     |    
-|    Group 7    |       28       |      71     |      72     |     73      |     74     |    
-|    Group 8    |       29       |      81     |      82     |     83      |     84     |
-
-```
+- Make sure your ROS_DOMAIN_ID is unique, or LOCALHOST_ONLY
 
 
 
-<span style="color: red; font-size: 18px">
-    <strong>
-<i>
-    ***Take Care If You Are a Member of Group 2 !!***
-</i>
-    </strong>
-</span> 
 
-<br>
-<br>
+## Template workspace `src` folder
 
-### Here is a template of a colcon workspace `src` folder
-
-- [Download the Template SRC](https://raw.githubusercontent.com/RPAI-Lab/EE211-25Fall/refs/heads/25Fall/assets/project/Robot_Workspace_SRC/src.tar.xz)
+- Download the template code <span style="float: right;">📜  [Template Packages](https://raw.githubusercontent.com/RPAI-Lab/EE211-25Fall/refs/heads/main/assets/project/Robot_Workspace_SRC/src.tar.xz)</span>
 
 The structure of `src` should be like:
 ```
@@ -84,8 +53,6 @@ src
 
 Please check it carefully
 
-<br>
-<br>
 
 ## Basic Operations You May Refer to
 
@@ -96,19 +63,16 @@ Please check it carefully
 
 - `ros2 launch iqr_tb4_bringup bringup.launch.py`: Launch the hardware setup
 
-<br>
 
 ***Keyboard Teleopration***
 
 - `ros2 run teleop_twist_keyboard teleop_twist_keyboard`: Send velocity command to topic `/cmd_vel`
 
-<br>
 
 ***Rviz2 Visualization***
 
 - `ros2 launch iqr_tb4_description display.launch.py`: Visualize the "digital twin" of the robot 
 
-<br>
 
 ***SLAM***
 
@@ -120,8 +84,6 @@ Please check it carefully
 
 - `ros2 run nav2_map_server map_saver_cli -f <name_of_your_saved_map>`: Save the map you constructed
 
-<br>
-<br>
 
 ***Navigation***
 
@@ -133,28 +95,25 @@ Please check it carefully
 
 - `ros2 launch turtlebot4_viz view_robot.launch.py`: Launch rviz2 for visualization during navigation
 
-<br>
 
 ***4-dof Arm***
 
-- You should place the arm in a configuration as below before `ros2 launch iqr_tb4_bringup bringup.launch.py`: 
+- You should place the arm in a configuration as below during rest: 
 
 <img src="https://rpai-lab.github.io/EE211-25Fall/assets/lab/week9/imgs/pic0.jpg" alt="name" style="zoom:8%;" />
-<!-- <img src="./imgs/pic0.jpg" alt="name" style="zoom:8%;" />  -->
 
-and here is a script that you may find it helpful to control the arm: [arm_control_demo.py](https://rpai-lab.github.io/EE211-25Fall/assets/project/Robot_Workspace_SRC/scripts/arm_controller_demo.py)
+- Here is a demo script that shows how to control the arm: <span style="float: right;">📜  [arm_control_demo.py](https://rpai-lab.github.io/EE211-25Fall/assets/project/Robot_Workspace_SRC/scripts/arm_controller_demo.py)</span>
 
 <br>
 
 ***Pan-Tilt***
 
-- `ros2 launch pan_tilt_bringup panTilt_bringup.launch.py`, then the pan-tilt topics are ready for you, you can publish to the topics to control the pan-tilt.
+- `ros2 launch pan_tilt_bringup panTilt_bringup.launch.py`, then the pan-tilt topics are ready for you, you can publish to these topics to control the pan-tilt.
 
 e.g.
 ```bash
 ros2 topic pub /pan_tilt_cmd_deg pan_tilt_msgs/msg/PanTiltCmdDeg "{yaw: 30.0, pitch: 30.0, speed: 5}"
 ```
-<br>
 
 ***Camera***
 
