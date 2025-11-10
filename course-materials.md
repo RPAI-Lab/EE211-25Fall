@@ -9,7 +9,7 @@ description: Listing of course modules and topics.
 {% comment %}
 Sort modules by extracting week number from title and sorting numerically in descending order
 {% endcomment %}
-{% assign sorted_modules = site.modules | sort: 'title' %}
+{% assign sorted_modules = site.modules | sort: 'slug' %}
 {% for module in sorted_modules reversed %}
 {{ module }}
 {% endfor %}
