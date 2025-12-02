@@ -25,6 +25,10 @@ description: Course Homework and Project.
 - <span style="color: #e94c4c; font-weight: normal;">Due Nov. 11</span>    <span style="float: right;"> 📄 [Download](https://rpai-lab.github.io/EE211-25Fall/assets/hw/Assignment_2.pdf) </span>
 <br>
 
+**Assignment 3**
+- <span style="color: #e94c4c; font-weight: normal;">Due Dec. 26</span>    <span style="float: right;"> 📄 [Download](https://rpai-lab.github.io/EE211-25Fall/assets/hw/Assignment_3.pdf) </span>
+<br>
+
 ---
 
 # Final Project
